@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes>
+  <route route_type="admin" route_prefix="forum-stats-stick" format=":int&lt;sticked_item_id,name&gt;/" controller="West\ForumStatsStick:StickedItem" context="w_forumstats_stick"/>
+</routes>

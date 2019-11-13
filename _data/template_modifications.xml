@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="af_forumstats_hottest_threads" modification_key="w_fss_hottest_threads_stick" description="Stick Threads in &quot;Hottest threads&quot; tab" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:foreach loop="$threads" value="$thread">]]></find>
+    <replace><![CDATA[<xf:macro template="w_fss_sticked_items_macros" name="sticked_items" arg-stickedItems="{$stickedItems}" arg-tab="hottest_threads"/>
+$0]]></replace>
+  </modification>
+  <modification type="public" template="af_forumstats_latest_forum_news" modification_key="w_fss_latest_forum_news_stick" description="Stick Threads in &quot;Latest forum news&quot; tab" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:foreach loop="$threads" value="$thread">]]></find>
+    <replace><![CDATA[<xf:macro template="w_fss_sticked_items_macros" name="sticked_items" arg-stickedItems="{$stickedItems}" arg-tab="latest_forum_news" />
+$0]]></replace>
+  </modification>
+  <modification type="public" template="af_forumstats_most_viewed_threads" modification_key="w_fss_most_viewed_threads_stick" description="Stick Threads in &quot;Most viewed threads&quot; tab" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:foreach loop="$threads" value="$thread">]]></find>
+    <replace><![CDATA[<xf:macro template="w_fss_sticked_items_macros" name="sticked_items" arg-stickedItems="{$stickedItems}" arg-tab="most_viewed_threads" />
+$0]]></replace>
+  </modification>
+  <modification type="public" template="af_forumstats_new_posts" modification_key="w_fss_new_posts_stick" description="Stick Threads in &quot;New posts&quot; tab" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:foreach loop="$threads" value="$thread">]]></find>
+    <replace><![CDATA[<xf:macro template="w_fss_sticked_items_macros" name="sticked_items" arg-stickedItems="{$stickedItems}" arg-tab="new_posts"/>
+$0]]></replace>
+  </modification>
+  <modification type="public" template="af_forumstats_new_threads" modification_key="w_fss_latest_threads_stick" description="Stick Threads in &quot;Latest threads&quot; tab" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:foreach loop="$threads" value="$thread">]]></find>
+    <replace><![CDATA[<xf:macro template="w_fss_sticked_items_macros" name="sticked_items" arg-stickedItems="{$stickedItems}" arg-tab="latest_threads"/>
+$0]]></replace>
+  </modification>
+</template_modifications>
