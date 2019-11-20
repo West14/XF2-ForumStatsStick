@@ -1,1 +1,1 @@
-Disable expired sticked items
+[West: AFS Stick] Disable expired sticked items

@@ -7,9 +7,9 @@
     },
     "cron_entry.expiredStickedItems.txt": {
         "global_cache": false,
-        "version_id": 2000170,
-        "version_string": "2.0.1",
-        "hash": "fe1962895b45a97e0e0005afe44bd0e5"
+        "version_id": 2010170,
+        "version_string": "2.1.1",
+        "hash": "d201c294a6a07c2d6dd17528bee3d436"
     },
     "w_fss_add_sticked_item.txt": {
         "global_cache": false,
