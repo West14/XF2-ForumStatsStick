@@ -1,0 +1,33 @@
+<xf:macro name="sticked_items" arg-items="!" arg-tab="!">	
+	<xf:foreach loop="$items" value="$item">
+		<xf:datarow>
+			<xf:cell class="dataList-cell--min dataList-cell--alt dataList-cell--image dataList-cell--imageSmall">
+				<xf:fa icon="fal fa-thumbtack fa-2x" />
+			</xf:cell>
+			
+			<xf:main href="{$item.link}" label="{$item.name}" />
+			
+			<xf:if is="{{ in_array($tab, ['new_posts', 'latest_forum_news']) }}">
+				<xf:cell class="dataList-cell--min dataList-cell--alt">
+					<xf:macro name="sticked_col" />
+				</xf:cell>
+			</xf:if>
+			
+			<xf:if is="{{ in_array($tab, ['hottest_threads', 'latest_threads', 'most_viewed_threads']) }}">
+				<xf:cell class="dataList-cell--min dataList-cell--alt">
+					<xf:macro name="sticked_col" />
+				</xf:cell>
+				
+				<xf:cell class="dataList-cell--min dataList-cell--alt">
+					<xf:macro name="sticked_col" />
+				</xf:cell>
+			</xf:if>
+		</xf:datarow>
+	</xf:foreach>
+</xf:macro>
+
+<xf:macro name="sticked_col">
+	<div class="miniCol">
+		{{ phrase('w_fss_sticked') }}
+	</div>					
+</xf:macro>

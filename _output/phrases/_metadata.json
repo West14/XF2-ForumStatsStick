@@ -1,0 +1,62 @@
+{
+    "admin_navigation.w_forumstats_stick.txt": {
+        "global_cache": false,
+        "version_id": 2000070,
+        "version_string": "2.0.0",
+        "hash": "54fb7bb4d6d894e363e4703821735231"
+    },
+    "cron_entry.expiredStickedItems.txt": {
+        "global_cache": false,
+        "version_id": 2000170,
+        "version_string": "2.0.1",
+        "hash": "fe1962895b45a97e0e0005afe44bd0e5"
+    },
+    "w_fss_add_sticked_item.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "e0af89246fc27b45899e55469e603b29"
+    },
+    "w_fss_edit_sticked_item.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "1e22d0a759b2434a4bfe677adfd7594d"
+    },
+    "w_fss_stick_length.txt": {
+        "global_cache": false,
+        "version_id": 2000170,
+        "version_string": "2.0.1",
+        "hash": "1ab8590acc6f4a39f3c3d0e2a356407d"
+    },
+    "w_fss_sticked.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "589da7ee52ae48841534e817c8135284"
+    },
+    "w_fss_sticked_item_active.txt": {
+        "global_cache": false,
+        "version_id": 2000170,
+        "version_string": "2.0.1",
+        "hash": "4d3d769b812b6faa6b76e1a8abaece2d"
+    },
+    "w_fss_sticked_item_link.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "97e7c9a7d06eac006a28bf05467fcc8b"
+    },
+    "w_fss_sticked_item_name.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "49ee3087348e8d44e1feda1917443987"
+    },
+    "w_fss_sticked_items.txt": {
+        "global_cache": false,
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "361aada1b6d9feb6f5879aeed06bc6e9"
+    }
+}

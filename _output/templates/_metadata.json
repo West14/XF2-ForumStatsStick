@@ -1,7 +1,22 @@
 {
-    "admin/w_fss_edit.html": {
+    "admin/w_fss_sticked_item_delete.html": {
+        "version_id": 2000010,
+        "version_string": "2.0.0 Alpha",
+        "hash": "f8aa14381012173066b62f3650b39958"
+    },
+    "admin/w_fss_sticked_item_edit.html": {
         "version_id": 2010070,
         "version_string": "2.1.0",
-        "hash": "190ad9de9b99f72a8ebd8c864e7ab314"
+        "hash": "b86189bdd029df3d8643e9a738a569e8"
+    },
+    "admin/w_fss_sticked_item_list.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "44a29446f040c738e37174bba794983a"
+    },
+    "public/w_fss_sticked_items_macros.html": {
+        "version_id": 2010070,
+        "version_string": "2.1.0",
+        "hash": "a137400939c016c3a30bd6deaadbae30"
     }
 }

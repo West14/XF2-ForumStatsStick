@@ -1,21 +1,26 @@
 {
     "legacy_addon_id": "",
-    "title": "[W] Stick Thread in AF Forum Stats",
+    "title": "[West] AFS Stick",
     "description": "Sticking items in forum stats by AddonFlare",
-    "version_id": 2010070,
-    "version_string": "2.1.0",
+    "version_id": 2010170,
+    "version_string": "2.1.1",
     "dev": "West",
-    "dev_url": "",
+    "dev_url": "https://t.me/West99",
     "faq_url": "",
     "support_url": "",
     "extra_urls": {
-        "GitHub": "https://github.com/West14/ForumStatsStick"
+        "XFI": "https://xenforo.info/members/22547",
+        "GitHub": "https://github.com/West14/XF2-ForumStatsStick"
     },
     "require": {
+        "XF": [
+            2010070,
+            "XenForo 2.1+"
+        ],
         "AddonFlare/ForumStats": [
             1010070,
             "[AddonFlare] AJAX Advanced Forum Stats 1.1.0"
         ]
     },
-    "icon": "fa-thumb-tack"
+    "icon": "fa-thumbtack"
 }

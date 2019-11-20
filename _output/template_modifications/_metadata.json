@@ -1,0 +1,17 @@
+{
+    "public/w_fss_hottest_threads_stick.json": {
+        "hash": "022c08cfb3851febc7f84883deef5859"
+    },
+    "public/w_fss_latest_forum_news_stick.json": {
+        "hash": "a7e673b96e81d8719098289be5f56840"
+    },
+    "public/w_fss_latest_threads_stick.json": {
+        "hash": "e0b3366034b3968cc6c28c19b10d35e0"
+    },
+    "public/w_fss_most_viewed_threads_stick.json": {
+        "hash": "52bbd9d989401a318b62f05f78674a93"
+    },
+    "public/w_fss_new_posts_stick.json": {
+        "hash": "1b580d6e3c2d7f7434b82a758ceff2cb"
+    }
+}

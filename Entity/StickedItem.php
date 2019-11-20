@@ -14,11 +14,13 @@ use XF\Mvc\Entity\Structure;
  * @property int end_date
  * @property bool active
  */
-class StickedItem extends Entity {
-	public static function getStructure(Structure $structure) {
-		$structure->table = "xf_fss_sticked_items";
-		$structure->shortName = "West\ForumStatsStick:StickedItem";
-		$structure->primaryKey = "sticked_item_id";
+class StickedItem extends Entity
+{
+	public static function getStructure(Structure $structure)
+    {
+		$structure->table = 'xf_fss_sticked_items';
+		$structure->shortName = 'West\ForumStatsStick:StickedItem';
+		$structure->primaryKey = 'sticked_item_id';
 		$structure->columns = [
 			'sticked_item_id' => ['type' => self::UINT, 'autoIncrement' => true],
 			'name' => ['type' => self::STR, 'required' => true],
@@ -27,6 +29,7 @@ class StickedItem extends Entity {
 			'end_date' => ['type' => self::UINT, 'required' => true],
 			'active' => ['type' => self::BOOL, 'default' => 1]
 		];
+
 		return $structure;
 	}
 }

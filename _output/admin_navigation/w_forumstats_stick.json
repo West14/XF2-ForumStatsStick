@@ -1,0 +1,10 @@
+{
+    "parent_navigation_id": "af_forumstats",
+    "display_order": 30,
+    "link": "w-afs-stick",
+    "icon": "",
+    "admin_permission_id": "",
+    "debug_only": false,
+    "development_only": false,
+    "hide_no_children": false
+}

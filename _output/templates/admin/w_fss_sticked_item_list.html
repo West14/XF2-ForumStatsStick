@@ -1,0 +1,38 @@
+<xf:title>{{ phrase('w_fss_sticked_items') }}</xf:title>
+
+<xf:pageaction>
+	<xf:button href="{{ link('w-afs-stick/add') }}" icon="add">{{ phrase('w_fss_add_sticked_item') }}</xf:button>
+</xf:pageaction>
+
+<xf:if is="$items is not empty">
+	<xf:form action="{{ link('w-afs-stick/toggle') }}" class="block" ajax="true">
+		<div class="block-container">
+			<div class="block-body">
+				<xf:datalist>
+					<xf:foreach loop="$items" value="$item">
+						<xf:datarow>
+							<xf:main hash="{$item.sticked_item_id}"
+									 href="{{ link('w-afs-stick/edit', $item) }}" label="{$item.name}"
+									 hint="{$item.link}" />
+
+							<xf:toggle name="active[{$item.sticked_item_id}]" selected="{$item.active}" 
+									   class="dataList-cell--separated" submit="true" 
+									   tooltip="{{ phrase('enable_disable_x', {'title': $item.name}) }}" />
+
+							<xf:delete href="{{ link('w-afs-stick/delete', $item) }}" />
+						</xf:datarow>
+					</xf:foreach>
+				</xf:datalist>
+			</div>
+			<div class="block-footer">
+				<span class="block-footer-counter">{{ display_totals(count($items)) }}</span>
+			</div>
+		</div>
+	</xf:form>
+	
+	<xf:else />
+	
+	<div class="blockMessage">
+		{{ phrase('no_items_have_been_created_yet') }}
+	</div>	
+</xf:if>

@@ -1,0 +1,17 @@
+{
+    "cron_class": "West\\ForumStatsStick\\Cron\\StickedItem",
+    "cron_method": "disableExpiredStickedItems",
+    "run_rules": {
+        "day_type": "dom",
+        "dom": [
+            -1
+        ],
+        "hours": [
+            12
+        ],
+        "minutes": [
+            0
+        ]
+    },
+    "active": true
+}

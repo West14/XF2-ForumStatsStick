@@ -1,0 +1,11 @@
+{
+    "route_type": "admin",
+    "route_prefix": "w-afs-stick",
+    "sub_name": "",
+    "format": ":int<sticked_item_id,name>/",
+    "build_class": "",
+    "build_method": "",
+    "controller": "West\\ForumStatsStick:StickedItem",
+    "context": "w_forumstats_stick",
+    "action_prefix": ""
+}

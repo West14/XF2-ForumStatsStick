@@ -1,0 +1,9 @@
+{
+    "template": "af_forumstats_latest_forum_news",
+    "description": "Stick Threads in \"Latest forum news\" tab",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:foreach loop=\"$threads\" value=\"$thread\">",
+    "replace": "<xf:macro template=\"w_fss_sticked_items_macros\" name=\"sticked_items\" arg-items=\"{$wAfsStickedItems}\" arg-tab=\"latest_forum_news\" />\n$0"
+}

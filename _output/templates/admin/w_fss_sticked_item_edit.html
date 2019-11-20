@@ -1,0 +1,35 @@
+<xf:if is="$item.isInsert()">
+	<xf:title>{{ phrase('w_fss_add_sticked_item') }}</xf:title>
+<xf:else />
+	<xf:title>{{ phrase('w_fss_edit_sticked_item:') }} {$item.name}</xf:title>
+</xf:if>
+
+<xf:form action="{{ link('w-afs-stick/save', $item) }}">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow name="name" value="{$item.name}"
+				label="{{ phrase('w_fss_sticked_item_name') }}" />
+			
+			<xf:textboxrow name="link" value="{$item.link}" 
+				label="{{ phrase('w_fss_sticked_item_link') }}" />
+			
+			<xf:numberboxrow name="display_order" value="{$item.display_order}"
+				label="{{ phrase('display_order') }}" />
+			
+			<xf:radiorow name="stick_length" value="{{ !$item.end_date ? 'permanent' : 'temporary' }}"
+				label="{{ phrase('w_fss_stick_length') }}">
+				
+				<xf:option label="{{ phrase('permanent') }}" value="permanent" />
+				<xf:option label="{{ phrase('until:') }}" value="temporary">
+					<xf:dateinput name="end_date" value="{{ $item.end_date ? date($item.end_date, 'Y-m-d') : '' }}" />
+				</xf:option>
+			</xf:radiorow>
+			
+			<xf:checkboxrow>
+				<xf:option name="active" checked="{$item.active}">{{ phrase('w_fss_sticked_item_active') }}</xf:option> 
+			</xf:checkboxrow>
+			
+			<xf:submitrow icon="save" />
+		</div>
+	</div>
+</xf:form>

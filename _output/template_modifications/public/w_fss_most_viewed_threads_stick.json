@@ -1,0 +1,9 @@
+{
+    "template": "af_forumstats_most_viewed_threads",
+    "description": "Stick Threads in \"Most viewed threads\" tab",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:foreach loop=\"$threads\" value=\"$thread\">",
+    "replace": "<xf:macro template=\"w_fss_sticked_items_macros\" name=\"sticked_items\" arg-items=\"{$wAfsStickedItems}\" arg-tab=\"most_viewed_threads\" />\n$0"
+}

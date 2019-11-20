@@ -2,14 +2,17 @@
 
 namespace West\ForumStatsStick\Cron;
 
-class StickedItem {
-	public static function disableExpiredStickedItems() {
-		$finder = \XF::finder('West\ForumStatsStick:StickedItem')
-					->where('end_date', '<', \XF::$time)
-					->where('end_date', '>', 0);
-		$stickedItems = $finder->fetch();
-		foreach ($stickedItems AS $stickedItem) {
-			$stickedItem->fastUpdate('active', 0);
-		}
+class StickedItem
+{
+	public static function disableExpiredStickedItems()
+    {
+        /** @var \West\ForumStatsStick\Repository\StickedItem $repo */
+        $repo = \XF::repository('West\ForumStatsStick:StickedItem');
+
+		/** @var \West\ForumStatsStick\Entity\StickedItem $item */
+        foreach ($repo->findExpiredStickedItems()->fetch() as $item)
+        {
+            $item->fastUpdate('active', 0);
+        }
 	}
 }
