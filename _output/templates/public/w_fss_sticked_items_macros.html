@@ -1,6 +1,6 @@
 <xf:macro name="sticked_items" arg-items="!" arg-tab="!">	
 	<xf:foreach loop="$items" value="$item">
-		<xf:datarow>
+		<xf:datarow rowclass="stickedItem--{$item.sticked_item_id}">
 			<xf:cell class="dataList-cell--min dataList-cell--alt dataList-cell--image dataList-cell--imageSmall">
 				<xf:fa icon="fal fa-thumbtack fa-2x" />
 			</xf:cell>
